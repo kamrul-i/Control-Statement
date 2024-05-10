@@ -7,6 +7,7 @@ public class Digit_Spelling_Program {
 	public static void main(String[] arg) {
 
 		try (Scanner input = new Scanner(System.in)) {
+			
 			int number;
 			
 			System.out.print("Enter any number : ");
