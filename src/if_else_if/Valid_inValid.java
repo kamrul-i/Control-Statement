@@ -13,11 +13,17 @@ public class Valid_inValid {
 			number = input.nextInt();
 			
 			
-			//positive-negative select =====================
-			if(number > 0) {
-				System.out.println(number + " is positive number.");
+			//even-odd & positive-negative select =====================
+			if(number > 0  && number % 2 == 0) {
+				System.out.println(number + " is Even & positive number.");
+			}else if(number > 0 && number!= 0) {
+				System.out.println(number + " is Odd & posative number.");
+			}else if(number < 0 && number % 2 == 0) {
+				System.out.println(number + " is negative & Even number.");
+			}else if(number < 0 && number!= 0){
+				System.out.println(number + " is negative & Odd number.");
 			}else {
-				System.out.println(number + " is negative number.");
+				System.out.print("invalid number !");
 			}
 			//=======================================================
 		}
