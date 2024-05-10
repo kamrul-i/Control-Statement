@@ -35,6 +35,30 @@ public class Valid_inValid {
 			    System.out.print("Invalid Number");
 			}
 			//=====================================================
+			
+			
+			
+			//একই design কে switch style -এ দেখানো হয়েছে।।
+			System.out.println("\n\n");
+			
+			int num2;
+			System.out.print("Enter any number : ");
+			num2 = input.nextInt();
+			
+			switch(num2) {
+				case 1 -> System.out.print("one");
+				case 2 -> System.out.print("two");
+				case 3 -> System.out.print("three");
+				case 4 -> System.out.print("four");
+				case 5 -> System.out.print("five");
+				case 6 -> System.out.print("sixx");
+				case 7 -> System.out.print("seven");
+				case 8 -> System.out.print("eight");
+				case 9 -> System.out.print("nine");
+				default -> System.out.print("Smilling !");
+			
+			}
+			System.out.println("\n\n");
 		}
 	}
 
