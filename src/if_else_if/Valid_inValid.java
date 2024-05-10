@@ -8,21 +8,16 @@ public class Valid_inValid {
 		try (Scanner input = new Scanner(System.in)) {
 			
 			//=====================================================
-			double number;
-			System.out.print("Enter any number : ");
-			number = input.nextDouble();
+			char c;
+			System.out.print("Do you love Java ? : ");
+			c = input.next().charAt(0);
 			
-			//even-odd & positive-negative select =====================
-			if(number > 0  && number % 2 == 0) {
-				System.out.println(number + " is Even & positive number.");
-			}else if(number > 0 && number!= 0) {
-				System.out.println(number + " is Odd & posative number.");
-			}else if(number < 0 && number % 2 == 0) {
-				System.out.println(number + " is negative & Even number.");
-			}else if(number < 0 && number!= 0){
-				System.out.println(number + " is negative & Odd number.");
+			if(c == 'y' || c == 'Y') {
+				System.out.print("You are a Java lover.");
+			}else if(c == 'n'  || c == 'N'){
+				System.out.print("You are not Java lover !");
 			}else {
-				System.out.print("invalid number !");
+				System.out.print("Smilling !");
 			}
 			//=======================================================
 		}
