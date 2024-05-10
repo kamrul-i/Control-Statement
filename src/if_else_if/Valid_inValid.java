@@ -8,19 +8,17 @@ public class Valid_inValid {
 		try (Scanner input = new Scanner(System.in)) {
 			
 			//=====================================================
-	        int age;
-	        System.out.print("Enter any age : ");
-	        age = input.nextInt();
-	        
-	        if(age>17){
-	            System.out.print("Valid Voter");
-	        }else{
-	            System.out.print("inValid Voter");
-	            
-	        }
-			//=====================================================
-		
-			System.out.println("\n\n");
+			//manage condition, who is valid voter.================
+			int age;
+			System.out.print("Please, Enter your age : ");
+			age = input.nextInt();
+			
+			if(age > 17) {
+				System.out.println("You are "+age+" years old. You are Valid Voter.");
+			}else {
+				System.out.println("You are "+age+" years old. You are inValid Voter.");
+			}
+			//=======================================================
 		}
 	}
 
