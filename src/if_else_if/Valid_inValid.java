@@ -8,15 +8,16 @@ public class Valid_inValid {
 		try (Scanner input = new Scanner(System.in)) {
 			
 			//=====================================================
-			//manage condition, who is valid voter.================
-			int age;
-			System.out.print("Please, Enter your age : ");
-			age = input.nextInt();
+			int number;
+			System.out.print("Enter any number : ");
+			number = input.nextInt();
 			
-			if(age > 17) {
-				System.out.println("You are "+age+" years old. You are Valid Voter.");
+			
+			//even-odd select ============
+			if(number % 2 == 0) {
+				System.out.println(number + " is Even number.");
 			}else {
-				System.out.println("You are "+age+" years old. You are inValid Voter.");
+				System.out.println(number + " is Odd number");
 			}
 			//=======================================================
 		}
