@@ -14,20 +14,10 @@ public class Valid_Invalid {
 			c = input.next().charAt(0);
 			
 			switch(c) {
-			case 'y':
-			case 'Y':
-				System.out.print("You are a Java lover !");
-				break;
-			
-			case 'n':
-			case 'N':
-				System.out.print("You are not Java lover !");
-				break;
-				
-			default:
-				System.out.print("Smilling !");
-				break;
-		}
+			case 'y', 'Y' -> System.out.println("You are Java lover !");
+			case 'n', 'N' -> System.out.println("You are not a java lover.");
+			default -> System.out.println("Smilling !");
+			}
 			//=======================================================
 		}
 	}
