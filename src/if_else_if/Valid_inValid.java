@@ -8,10 +8,9 @@ public class Valid_inValid {
 		try (Scanner input = new Scanner(System.in)) {
 			
 			//=====================================================
-			int number;
+			double number;
 			System.out.print("Enter any number : ");
-			number = input.nextInt();
-			
+			number = input.nextDouble();
 			
 			//even-odd & positive-negative select =====================
 			if(number > 0  && number % 2 == 0) {
