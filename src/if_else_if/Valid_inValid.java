@@ -13,11 +13,11 @@ public class Valid_inValid {
 			number = input.nextInt();
 			
 			
-			//even-odd select ============
-			if(number % 2 == 0) {
-				System.out.println(number + " is Even number.");
+			//positive-negative select =====================
+			if(number > 0) {
+				System.out.println(number + " is positive number.");
 			}else {
-				System.out.println(number + " is Odd number");
+				System.out.println(number + " is negative number.");
 			}
 			//=======================================================
 		}
