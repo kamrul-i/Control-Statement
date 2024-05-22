@@ -5,24 +5,31 @@ import java.util.Scanner;
 public class For_Loop {
 	public static void main(String[] args) {
 
-
-		
+	
 		try (Scanner input = new Scanner(System.in)) {
 			
-			int num, fact = 1;  
+	        //select prime number ......................................
 	        System.out.print("Enter any positive number : ");
-	        num = input.nextInt();
+	        int num = input.nextInt();
+	        int count = 0;
 	        
-	        for (int i=num; i>=1; i--) {
-	        	fact = fact * i;
-	        	System.out.print(i+" ");
+	        
+	        if(num == 0 || num == 1){
+	            System.out.println(" not prime");
+	        }else{
+	            for (int i = 2; i < num/2; i++) {
+	                if(num % i == 0){
+	                    count++;
+	                    break;
+	                } 
+	            }
+	            if(count == 0){
+	                System.out.print(" prime ummber");
+	            }else{
+	                System.out.print(" not prime");
+	            }
 	        }
-	        System.out.printf("\n");
-	        System.out.print("This number's factorial is : " + fact);
-	      
-	        //factorial-মানে হলো,যে সংখ্যা input দিবেন, সেটা সহ তার পূর্ববর্তী সকল সংখ্যার গুণফল।।
-	        // imagine (5-ar factorial, 5! = 5*4*3*2*1 = 120
-	        //         (10-ar factorial, 10! = 10*9*8*7*6*5*4*3*2*1 = 3628800 
+	        //select prime number .....................................
 		}
 
 	}
